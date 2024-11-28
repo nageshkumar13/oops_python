@@ -1,0 +1,36 @@
+
+Here’s a mini-project implementing all OOP concepts. 
+We'll create a Library Management System to manage books, users, and transactions 
+(borrowing and returning books).
+
+Step-by-Step Design
+Classes and Objects:
+Define Book, Member, and Library classes.
+Inheritance:
+Member class inherits from Person class to reuse attributes.
+Encapsulation:
+Hide library's book collection and transaction history, exposing methods to manage them.
+Polymorphism:
+Multiple Person types (Member and Librarian) with shared behavior like viewing books but unique behavior like borrowing/approving books.
+Abstraction:
+Abstract Person class defines shared behavior for Member and Librarian.
+
+
+Explanation
+Classes and Objects:
+
+Book, Member, Librarian, and Library are classes.
+Objects like book1, member, and librarian represent real-world entities.
+Inheritance:
+
+Member and Librarian inherit from the Person class, reusing shared properties (name, person_id) and implementing the role method differently.
+Encapsulation:
+
+Library keeps books and transactions as private attributes (__books and __transactions), accessible only through controlled methods (add_book, show_books, lend_book, etc.).
+Polymorphism:
+
+The role method behaves differently for Member and Librarian.
+The show_role function dynamically identifies the role of different Person objects.
+Abstraction:
+
+The Person class defines the role method but doesn’t implement it directly, leaving subclasses (Member, Librarian) to provide specific implementations.
